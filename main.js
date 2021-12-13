@@ -11,22 +11,18 @@ function updateVisitCount() {
 }
 
 
+<script>
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/linksopener.github.iovisit-counter/visits?callback=cb"></script>
 
 
 
 
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
 
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
 
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
 
 
 
