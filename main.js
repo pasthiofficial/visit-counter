@@ -3,7 +3,7 @@ const countEl = document.getElementById('count');
 updateVisitCount();
 
 function updateVisitCount() {
-	fetch('https://api.countapi.xyz/update/localhost/?amount=1')
+	fetch('https://api.countapi.xyz/update/localhost/?amount=11')
 	.then(res => res.json())
 	.then(res => {
 		countEl.innerHTML = res.value;
